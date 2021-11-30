@@ -72,24 +72,19 @@
             USA<br />
             <br />
 
-            <form action="" method="post" id="contact-form">
-              <label class="standard-label" for="contact-email">E-mail: </label>
-              <input type="email" id="contact-email" required />
+            <form action="post" id="contact-form">
+              <label for="email-input" class="standard-label">Email: </label>
+              <input type="email" id="email-input" required>
 
-              <label class="standard-label" for="tel-input">Telephone:</label>
-              <input type="tel" id="tel-input" />
+              <label for="tel-input" class="standard-label">Telephone: </label>
+              <input type="tel" id="tel-input">
 
-              <label class="standard-label" for="submit-input" for="text"
-                >Message</label
-              >
-              <label for="text">required</label>
-              <textarea
-                id="text"
-                maxlength="240"
-                required="submit-input"
-              ></textarea>
-              <input type="submit" value="Send message" id="submit-input" />
-            </form>
+              <label for="text-input" class="standard-label">Message: </label>
+              <textarea id="text-input" maxlength="240" required ></textarea>
+
+              <!-- <input type="submit" value="Submit Form"> -->
+              <button>Submit Form</button>
+          </form>
 
             # <a href="tel:+1-920-639-2762">Call or text me</a>
             <br />
