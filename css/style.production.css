@@ -26,32 +26,13 @@ body (lightgray):       ;
 
 /* HTML elements that commonly take display: block as their default include <div>, <p>, and <form> */
 
-
-
-
-
-:root {
-  --primary-color: #d67906a3;
-  --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b;
-  --light-grey: #d3d3d3;
-  --white: #ffffff;
-  --light-bluegreen: #357b70;
-  --black: #000000;
-  --light-yellow: #fcffad;
-  --light-orange: #f76414;
-  --dark-yellow: #edc655;
-  --dark-turquoise: #05676e;
-
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: #d67906a3;
   font-family: 'Viaoda Libre', cursive;
   font-weight: 400;
   font-size: 16px;
@@ -68,12 +49,12 @@ h1 {
 }
 
 a {
-  color: var(--primary-color);
+  color: #d67906a3;
 }
 
 a:visited {
   /* Visited Link*/
-  color: var(--dark-turquoise);
+  color: #05676e;
 }
 
 a:hover, a:focus {
@@ -86,20 +67,62 @@ a:active {
   color: #00c975;
 }
 
-.button, button, input[type="submit"] {
+.button {
   /* Overwrites browser Defaults and resets the border */
   border: none;
   /* Takes the font from the outer container */
   font-family: inherit;
   /* Styles the background color, font color, and text decoration (underline....ex) of the button */
-  background-color: var(--light-bluegreen);
-  color: var(--white);
+  background-color: #357b70;
+  color: #ffffff;
   text-decoration: none;
   /* adds spacing to the button */
   padding: 10px;
   border-radius: 3px;
   /* Gives button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px soild var(--black);
+  border-bottom: 2px soild #000000;
+  display: inline-block;
+  -webkit-transition: .9s opacity;
+  -o-transition: .9s opacity;
+  transition: .9s opacity;
+
+}
+
+button {
+  /* Overwrites browser Defaults and resets the border */
+  border: none;
+  /* Takes the font from the outer container */
+  font-family: inherit;
+  /* Styles the background color, font color, and text decoration (underline....ex) of the button */
+  background-color: #357b70;
+  color: #ffffff;
+  text-decoration: none;
+  /* adds spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* Gives button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px soild #000000;
+  display: inline-block;
+  -webkit-transition: .9s opacity;
+  -o-transition: .9s opacity;
+  transition: .9s opacity;
+
+}
+
+input[type="submit"] {
+  /* Overwrites browser Defaults and resets the border */
+  border: none;
+  /* Takes the font from the outer container */
+  font-family: inherit;
+  /* Styles the background color, font color, and text decoration (underline....ex) of the button */
+  background-color: #357b70;
+  color: #ffffff;
+  text-decoration: none;
+  /* adds spacing to the button */
+  padding: 10px;
+  border-radius: 3px;
+  /* Gives button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px soild #000000;
   display: inline-block;
   -webkit-transition: .9s opacity;
   -o-transition: .9s opacity;
@@ -118,8 +141,8 @@ button:focus,
 }
 
 .button__secondary {
-  background-color: var(--secondary-color);
-  color: var(--dark-grey);
+  background-color: #e0b354;
+  color: #2b2b2b;
 }
 
 .navigation-list {
@@ -178,7 +201,7 @@ button:focus,
 }
 
 .skills {
-  border-bottom: solid var(--black);
+  border-bottom: solid #000000;
 }
 
 .page-footer {
@@ -199,6 +222,14 @@ button:focus,
   width: 33%;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
 /* end grid fallback */
 
 @supports (display: grid) {
@@ -209,12 +240,11 @@ button:focus,
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin: 0;
 
   }
 
   .grid__item {
-    background-color: var(--light-grey);
+    background-color: #d3d3d3;
     width: auto;
     min-height: auto;
     margin: 0;
@@ -234,35 +264,35 @@ dv {
   /*adds a 10px INNER spacing to all sides */
   margin: 10px;
   /* Adds a 10px OUTER spacing to all sides */
-  border: 1px solid var(--black);
+  border: 1px solid #000000;
   /* Attributes describe: thickness(1px), type(solid), color(black) */
 }
 
 @-webkit-keyframes color-change {
   0% {
-    fill: var(--dark-yellow);
+    fill: #edc655;
   }
 
   50% {
-    fill: var(--light-yellow);
+    fill: #fcffad;
   }
 
   100% {
-    fill: var(--light-orange);
+    fill: #f76414;
   }
 }
 
 @keyframes color-change {
   0% {
-    fill: var(--dark-yellow);
+    fill: #edc655;
   }
 
   50% {
-    fill: var(--light-yellow);
+    fill: #fcffad;
   }
 
   100% {
-    fill: var(--light-orange);
+    fill: #f76414;
   }
 }
 
