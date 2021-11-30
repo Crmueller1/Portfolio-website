@@ -37,6 +37,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  padding:10px;
+  margin: 10px;
 }
 
 main {
@@ -193,7 +195,7 @@ button:focus,
 }
 
 .profile_portrait {
-  float: none;
+  float: left;
   width: 250px;
   height: 500px;
   margin-right: 40px;
