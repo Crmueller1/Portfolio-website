@@ -34,20 +34,23 @@ body (lightgray):       ;
     --light-orange: #f76414;
     --dark-yellow: #edc655;
     --dark-turquoise: #05676e;
+    --gray: #333;
 }
 
 * {
     box-sizing: border-box;
 }
 
+html,
 body {
-    background-color: var(--primary-color);
+    background-color: var(--gray);
     font-family: 'Viaoda Libre', cursive;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     padding: 10px;
     margin: 10px;
+    text-align: center;
 }
 
 main {
@@ -55,8 +58,13 @@ main {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
+    color: var(--black)
+}
+
+p {
+    font-size: 25px;
 }
 
 a {
@@ -65,7 +73,7 @@ a {
 
 a:visited {
     /* Visited Link*/
-    color: var(--dark-turquoise);
+    color: var(--primary-color);
 }
 
 a:hover,
